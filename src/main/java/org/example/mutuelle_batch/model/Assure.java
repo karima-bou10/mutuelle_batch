@@ -16,6 +16,12 @@ public class Assure {
     private String numeroAffiliation;
     private String immatriculation;
 
-    @OneToMany(mappedBy = "assure")
+    @OneToMany(mappedBy = "assure", fetch = FetchType.EAGER)
     private List<Beneficiaire> beneficiaires;
+
+    public Assure(String nomAssure, String numeroAffiliation, String immatriculation) {
+        this.nomAssure = nomAssure;
+        this.numeroAffiliation = numeroAffiliation;
+        this.immatriculation = immatriculation;
+    }
 }

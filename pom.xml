@@ -11,8 +11,8 @@
     <groupId>org.example</groupId>
     <artifactId>mutuelle_batch</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mini_projet_arch</name>
-    <description>mini_projet_arch</description>
+    <name>mutuelle_batch</name>
+    <description>mutuelle_batch</description>
     <url/>
     <licenses>
         <license/>
@@ -95,6 +95,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
         </dependency>
     </dependencies>
 

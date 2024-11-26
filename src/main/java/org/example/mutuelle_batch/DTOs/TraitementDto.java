@@ -4,9 +4,10 @@ import lombok.Data;
 
 @Data
 public class TraitementDto {
-    private String codeBarre;
+    private Long codeBarre;
     private boolean existe;
     private String nomMedicament;
     private String typeMedicament;
     private double prixMedicament;
+    private double tauxRemboursement;
 }

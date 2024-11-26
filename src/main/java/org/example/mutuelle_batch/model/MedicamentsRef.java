@@ -12,9 +12,8 @@ import lombok.*;
 @NoArgsConstructor
 public class MedicamentsRef {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idMedicamentsRef;
+    private long codeBarre;
     private String nomMedicament;
-    private Double prixReference;
-    private int  pourcentageRemboursement;
+    private double prixReference;
+    private double pourcentageRemboursement;
 }

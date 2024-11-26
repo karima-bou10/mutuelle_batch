@@ -14,7 +14,14 @@ public class Beneficiaire {
     private String nomBeneficiaire;
     private String lienParente;
 
+
     @ManyToOne(cascade = { CascadeType.MERGE })
     @JoinColumn(name = "assure_id")
     private Assure assure;
+
+    public Beneficiaire(String nomBeneficiaire, String lienParente, Assure assure) {
+        this.nomBeneficiaire = nomBeneficiaire;
+        this.lienParente = lienParente;
+        this.assure = assure;
+    }
 }
