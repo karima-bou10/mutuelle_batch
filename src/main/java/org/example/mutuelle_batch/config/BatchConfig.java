@@ -7,7 +7,6 @@ import org.example.mutuelle_batch.model.Dossier;
 import org.example.mutuelle_batch.policy.CustomRetryPolicy;
 import org.example.mutuelle_batch.policy.CustomSkipPolicy;
 import org.example.mutuelle_batch.processor.CompositeProcessor;
-import org.example.mutuelle_batch.writer.DossierDatabaseWriter;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -32,8 +31,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 @EnableBatchProcessing
 @EnableTransactionManagement
 public class BatchConfig {
-
-    private final DossierDatabaseWriter writer;
     private final PlatformTransactionManager transactionManager;
 
     @Autowired
@@ -48,11 +45,9 @@ public class BatchConfig {
     @Qualifier("batchDataSource")  //refer to the batch data source
     private final DataSource batchDataSource;
     private final CompositeProcessor compositeProcessor;
-    public BatchConfig(DossierDatabaseWriter writer,
-                       @Qualifier("dataSource") DataSource batchDataSource,
+    public BatchConfig(@Qualifier("dataSource") DataSource batchDataSource,
                        PlatformTransactionManager transactionManager,
                        CompositeProcessor compositeProcessor1) {
-        this.writer = writer;
         this.batchDataSource = batchDataSource;
         this.transactionManager = transactionManager;
         this.compositeProcessor = compositeProcessor1;

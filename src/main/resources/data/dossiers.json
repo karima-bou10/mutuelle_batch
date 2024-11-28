@@ -38,9 +38,9 @@
     "dateDepotDossier": "2024-11-11",
     "traitements": [
       {
-        "codeBarre": "6118000080497",
+        "codeBarre": "6118000160168",
         "existe": true,
-        "nomMedicament": "RHINOFEBRAL",
+        "nomMedicament": "AMOXIL",
         "typeMedicament": "Antibiotique",
         "prixMedicament": 12.0
       }

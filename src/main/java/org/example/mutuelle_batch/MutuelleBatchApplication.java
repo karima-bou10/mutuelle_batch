@@ -34,8 +34,8 @@ public class MutuelleBatchApplication implements CommandLineRunner {
         String filePath = "C:\\Users\\hp\\Downloads\\ref-des-medicaments-cnops-2014.xlsx";
 
         // Appeler le service pour importer les données
-        excelToDatabaseService.importExcelData(filePath);
-        System.out.println("Importation des médicaments terminée !");
+        //excelToDatabaseService.importExcelData(filePath);
+        //System.out.println("Importation des médicaments terminée !");
 
         // Trigger the job
         jobLauncher.run(dossierProcessingJob, new JobParametersBuilder()
