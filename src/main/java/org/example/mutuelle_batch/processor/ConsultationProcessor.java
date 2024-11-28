@@ -11,8 +11,6 @@ public class ConsultationProcessor implements ItemProcessor<DossierDto, DossierD
 
     @Override
     public DossierDto process(DossierDto dossierDto) throws Exception {
-
-        // Calculer le remboursement de la consultation
         double remboursementConsultation = dossierDto.getPrixConsultation() * TAUX_REMBOURSEMENT_CONSULTATION;
         dossierDto.setPrixConsultation(remboursementConsultation);
 

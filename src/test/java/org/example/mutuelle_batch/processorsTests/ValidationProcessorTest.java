@@ -1,4 +1,4 @@
-package org.example.mutuelle_batch;
+package org.example.mutuelle_batch.processorsTests;
 
 import org.example.mutuelle_batch.DTOs.DossierDto;
 import org.example.mutuelle_batch.DTOs.TraitementDto;

@@ -7,7 +7,6 @@ import org.example.mutuelle_batch.repository.AssureRepository;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 
 @Component

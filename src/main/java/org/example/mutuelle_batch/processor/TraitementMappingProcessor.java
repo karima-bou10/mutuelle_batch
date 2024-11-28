@@ -7,15 +7,12 @@ import org.example.mutuelle_batch.repository.MedicamentsRefRepository;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.util.Optional;
 
 @Component
 public class TraitementMappingProcessor implements ItemProcessor<DossierDto, DossierDto> {
     //Mappe chaque traitement du dossier au médicament référentiel et vérifie sa disponibilité dans le référentiel
-
     private final MedicamentsRefRepository medicamentsRefRepository;
-
     @Autowired
     public TraitementMappingProcessor(MedicamentsRefRepository medicamentsRefRepository) {
         this.medicamentsRefRepository = medicamentsRefRepository;

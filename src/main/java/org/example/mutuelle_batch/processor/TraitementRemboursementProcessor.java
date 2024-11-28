@@ -8,12 +8,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class TraitementRemboursementProcessor implements ItemProcessor<DossierDto, DossierDto> {
     // Calcule le montant remboursable pour chaque médicament référencé en appliquant le pourcentage de remboursement spécifié
-
     @Override
     public DossierDto process(DossierDto dossierDto) throws Exception {
         for (TraitementDto traitement : dossierDto.getTraitements()) {
             if(traitement.getTauxRemboursement()>0){
-            // Calculer le remboursement pour chaque médicament référentiel
+            // Calculer le remboursement pour chaque médicament
             double remboursement = traitement.getPrixMedicament() * traitement.getTauxRemboursement();
             traitement.setPrixMedicament(remboursement);
             }

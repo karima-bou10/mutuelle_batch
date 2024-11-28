@@ -11,16 +11,16 @@
     "dateDepotDossier": "2024-11-10",
     "traitements": [
       {
-        "codeBarre": "1234567890",
+        "codeBarre": "6118001080304",
         "existe": true,
-        "nomMedicament": "Paracétamol",
+        "nomMedicament": "CLAFORAN",
         "typeMedicament": "Antalgique",
         "prixMedicament": 5.0
       },
       {
-        "codeBarre": "0987654321",
+        "codeBarre": "6118000080497",
         "existe": false,
-        "nomMedicament": "Ibuprofène",
+        "nomMedicament": "RHINOFEBRAL",
         "typeMedicament": "Anti-inflammatoire",
         "prixMedicament": 8.0
       }
@@ -38,9 +38,9 @@
     "dateDepotDossier": "2024-11-11",
     "traitements": [
       {
-        "codeBarre": "1122334455",
+        "codeBarre": "6118000080497",
         "existe": true,
-        "nomMedicament": "Amoxicilline",
+        "nomMedicament": "RHINOFEBRAL",
         "typeMedicament": "Antibiotique",
         "prixMedicament": 12.0
       }

@@ -11,9 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TotalRemboursementProcessor implements ItemProcessor<DossierDto, Dossier> {
     // Additionne les remboursements de la consultation et des traitements pour calculer le total du remboursement
-
     private final AssureRepository assureRepository;
-
     @Autowired
     public TotalRemboursementProcessor(AssureRepository assureRepository) {
         this.assureRepository = assureRepository;

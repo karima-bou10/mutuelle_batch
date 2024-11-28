@@ -8,15 +8,13 @@ import org.example.mutuelle_batch.model.MedicamentsRef;
 import org.example.mutuelle_batch.repository.MedicamentsRefRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.io.File;
 import java.io.FileInputStream;
 
 @Service
 public class ExcelToDatabaseService {
-    //Ce service qui lit le fichier Excel et remplit la table MedicamentsRef
+    //Ce service lit le fichier Excel et remplit la table MedicamentsRef
     private final MedicamentsRefRepository medicamentsRefRepository;
-
     @Autowired
     public ExcelToDatabaseService(MedicamentsRefRepository medicamentsRefRepository) {
         this.medicamentsRefRepository = medicamentsRefRepository;
