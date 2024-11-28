@@ -77,13 +77,13 @@ Avant d'exécuter ce projet, assurez-vous d'avoir les éléments suivants instal
 
 ## Structure du projet
 
-**DTOs**       : Contient les classes de transfert de données (par exemple, DossierDto).
-**model**      : Contient les entités métier (par exemple, Dossier).
-**processor**  : Contient les différents processeurs utilisés dans le traitement des données.
-**reader**     : Contient le composant de lecture des fichiers JSON.
-**writer**     : Contient le composant pour écrire les données dans la base.
-**config**     : Contient la configuration principale de Spring Batch.
-**controller** : Fournit une API REST pour exécuter manuellement le job.
+- **DTOs** : Contient les classes de transfert de données (par exemple, DossierDto).
+- **model** : Contient les entités métier (par exemple, Dossier).
+- **processor** : Contient les différents processeurs utilisés dans le traitement des données.
+- **reader** : Contient le composant de lecture des fichiers JSON.
+- **writer** : Contient le composant pour écrire les données dans la base.
+- **config** : Contient la configuration principale de Spring Batch.
+- **controller** : Fournit une API REST pour exécuter manuellement le job.
 
 ---
 
