@@ -80,7 +80,7 @@ Avant d'exécuter ce projet, assurez-vous d'avoir les éléments suivants instal
 - **DTOs** : Contient les classes de transfert de données (par exemple, DossierDto).
 - **model** : Contient les entités métier (par exemple, Dossier).
 - **processor** : Contient les différents processeurs utilisés dans le traitement des données.
-- **reader** : Contient le composant de lecture des fichiers JSON.
+- **reader** : Contient le composant de lecture du fichier JSON.
 - **writer** : Contient le composant pour écrire les données dans la base.
 - **config** : Contient la configuration principale de Spring Batch.
 - **controller** : Fournit une API REST pour exécuter manuellement le job.
@@ -89,8 +89,8 @@ Avant d'exécuter ce projet, assurez-vous d'avoir les éléments suivants instal
 
 ## Points importants
 
-**Gestion des erreurs** : Le projet utilise des stratégies de skip pour ignorer les erreurs spécifiques tout en continuant le traitement.
-**Personnalisation des jobs** : Les jobs sont configurables grâce à Spring Batch, avec des fonctionnalités comme skipPolicy, retryPolicy et listeners.
+- **Gestion des erreurs** : Le projet utilise des stratégies de skip pour ignorer les erreurs spécifiques tout en continuant le traitement.
+- **Personnalisation des jobs** : Les jobs sont configurables grâce à Spring Batch, avec des fonctionnalités comme skipPolicy, retryPolicy et listeners.
 
 
 
